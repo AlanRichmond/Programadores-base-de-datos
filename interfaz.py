@@ -7,12 +7,13 @@ import os
 # inserta los valores a la base de datos 
 def preguntasProgramador():
     os.system("clear")
-    nombre = input("hola como te llamas? ")
-    apellido = input("como es tu apellido? ")
+    print("Hola!\nSe le hara algunas preguntas para poder registrarlo en la base de datosz.\n")
+    nombre = input("Cual es tu nombre? ")
+    apellido = input("Cual es tu apellido? ")
     dni = int(input("cual es tu dni? "))
-    fecha_nacimiento = input("cual es tu fecha de nacimiento? ")
-    nacionalidad = input("de que nacionalidad sos? ")
-    lenguajePorgramacion = input("que lenguaje manejas? ")
+    fecha_nacimiento = input("cual es tu fecha de nacimiento?(formato XX/XX/XXXX) ")
+    nacionalidad = input("Nacionalidad? ")
+    lenguajePorgramacion = input("que lenguajes de programacion manejas? ")
     trabajo = input("tienes trabajo de programador (si/no)? ").lower()
     if(trabajo == "si"):
         experiencia = int(input("cuantos años tienes trabajando? "))
