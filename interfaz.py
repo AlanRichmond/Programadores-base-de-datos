@@ -7,7 +7,7 @@ import os
 # inserta los valores a la base de datos 
 def preguntasProgramador():
     os.system("clear")
-    print("Hola!\nSe le hara algunas preguntas para poder registrarlo en la base de datosz.\n")
+    print("Hola!\nSe le hara algunas preguntas para poder registrarlo en la base de datos.\n")
     nombre = input("Cual es tu nombre? ")
     apellido = input("Cual es tu apellido? ")
     dni = int(input("cual es tu dni? "))
@@ -98,6 +98,7 @@ while(continuar == True):
         seguirPreguntando = input("Quieres hacer otra instruccion? (si/no) ").lower()
         if(seguirPreguntando == "no"):
             continuar = False
+            print("Salio exitosamente.")
         
     
     
