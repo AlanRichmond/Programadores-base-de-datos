@@ -6,22 +6,21 @@ import os
 # pregunta por pantalla al usuario todos los atributos de la clase Porgramador 
 # inserta los valores a la base de datos 
 def preguntasProgramador():
-    if(consulta == 1):
-        os.system("clear")
-        nombre = input("hola como te llamas? ")
-        apellido = input("como es tu apellido? ")
-        dni = int(input("cual es tu dni? "))
-        fecha_nacimiento = input("cual es tu fecha de nacimiento? ")
-        nacionalidad = input("de que nacionalidad sos? ")
-        lenguajePorgramacion = input("que lenguaje manejas? ")
-        trabajo = input("tienes trabajo de programador (si/no)? ").lower
-        if(trabajo == "si"):
-            experiencia = int(input("cuantos años tienes trabajando? "))
-        else:
-            experiencia = 0
-        programador1 = Programador(nombre,apellido,dni,fecha_nacimiento,nacionalidad,lenguajePorgramacion,
-                trabajo,experiencia)
-        base_de_datos.insertar(programador1)
+    os.system("clear")
+    nombre = input("hola como te llamas? ")
+    apellido = input("como es tu apellido? ")
+    dni = int(input("cual es tu dni? "))
+    fecha_nacimiento = input("cual es tu fecha de nacimiento? ")
+    nacionalidad = input("de que nacionalidad sos? ")
+    lenguajePorgramacion = input("que lenguaje manejas? ")
+    trabajo = input("tienes trabajo de programador (si/no)? ").lower()
+    if(trabajo == "si"):
+        experiencia = int(input("cuantos años tienes trabajando? "))
+    else:
+        experiencia = 0
+    programador1 = Programador(nombre,apellido,dni,fecha_nacimiento,nacionalidad,lenguajePorgramacion,
+            trabajo,experiencia)
+    base_de_datos.insertar(programador1)
 
 
 def mostrarTabla():
@@ -95,7 +94,7 @@ while(continuar == True):
         
         
     if(continuar == True):
-        seguirPreguntando = input("Quieres hacer otra instruccion? (si/no) ").lower
+        seguirPreguntando = input("Quieres hacer otra instruccion? (si/no) ").lower()
         if(seguirPreguntando == "no"):
             continuar = False
         
