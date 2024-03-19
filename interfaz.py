@@ -40,7 +40,8 @@ while(continuar == True):
                      4 - MOSTRAR TABLA DE PROGRAMADORES
                      5 - MOSTRAR TABLA DE PROGRAMADORES POR MENOR..
                      6 - MOSTRAR TABLA DE PROGRAMADORES POR MAYOR..
-                     7 - SALIR 
+                     7 - MOSTRAR DNI 
+                     8 - SALIR 
                      
                      ingrese numero: """))
     os.system("clear")
@@ -84,7 +85,7 @@ while(continuar == True):
         print("TABLA: ")
         base_de_datos.mostrarTablaDescPor(atributo)
     
-    elif(consulta == 7):
+    elif(consulta == 8):
         print("Salio exitosamente.")
         continuar = False
         

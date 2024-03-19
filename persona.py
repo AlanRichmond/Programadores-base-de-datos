@@ -4,15 +4,14 @@ class Persona:
     def __init__(self, nombre, apellido, dni, fechaDeNacimiento, nacionalidad):
         self.nombre = nombre
         self.apellido = apellido
-        self.__dni = dni
+        self.dni = dni
         self.__fechaDeNacimiento = fechaDeNacimiento
         self.nacionalidad = nacionalidad
             
     def __str__(self):
         return (f" la persona se llama {self.nombre} {self.apellido}")
     
-    def get_dni(self):
-        return (f"el dni de la persona es {self.__dni}")
+   
     
     def get_fechaNacimiento(self):
         return (f"el dni de la persona es {self.__fechaDeNacimiento}")

@@ -2,9 +2,9 @@ from persona import Persona
 
 
 class Programador(Persona):
-    def __init__(self, nombre, apellido, dni, fechaDeNacimiento, nacionalidad,
+    def __init__(self, nombre, apellido,dni, fechaDeNacimiento, nacionalidad,
                 lenguajeDeProgramacion, trabajo, aniosProgramando):
-        super().__init__(nombre, apellido, dni, fechaDeNacimiento, nacionalidad)
+        super().__init__(nombre, apellido,dni, fechaDeNacimiento, nacionalidad)
         self.lenguajeDeProgramacion = lenguajeDeProgramacion
         self.trabajo = trabajo
         self.aniosProgramando = aniosProgramando 
