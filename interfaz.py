@@ -1,6 +1,6 @@
 from programador import Programador
-import base_de_datos
 import os
+import base_de_datos
 
 # pregunta por pantalla al usuario todos los atributos de la clase Porgramador 
 # inserta los valores a la base de datos 
