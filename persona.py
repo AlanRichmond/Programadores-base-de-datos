@@ -14,7 +14,7 @@ class Persona:
    
     
     def get_fechaNacimiento(self):
-        return (f"el dni de la persona es {self.__fechaDeNacimiento}")
+        return (f"la fecha de nacimiento de la persona es {self.__fechaDeNacimiento}")
     
     def edad(self):           
         # Obtener la fecha y hora actual
