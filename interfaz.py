@@ -2,7 +2,6 @@ from programador import Programador
 import base_de_datos
 import os
 
-
 # pregunta por pantalla al usuario todos los atributos de la clase Porgramador 
 # inserta los valores a la base de datos 
 def preguntasProgramador():
